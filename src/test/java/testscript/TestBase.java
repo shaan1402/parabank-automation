@@ -1,7 +1,5 @@
 package testscript;
 
-import java.io.File;
-
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -9,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 import base.ControlActions;
 import pages.HomePage;
 import pages.LoginPage;
-import path.ConstantPath;
 import utility.PropOperations;
 
 public class TestBase {
@@ -18,7 +15,7 @@ public class TestBase {
 	public static PropOperations propOperations;
 	public RegisterTest registerTest;
 	
-	private String url;
+//	private String url;
 	
 	//commented for xml purpose you can comment off in case of individual class running
 //	@BeforeTest
@@ -34,10 +31,11 @@ public class TestBase {
 	@BeforeClass
 	public void startSetup() {
 		
-		propOperations = new PropOperations(ConstantPath.CONFIGFILEPATH);
-		url = propOperations.getValue("url");
-		ControlActions.start(url);
-//		ControlActions.start("https://parabank.parasoft.com/parabank/register.htm");
+//		propOperations = new PropOperations(ConstantPath.CONFIGFILEPATH);
+//		String env = System.getProperty("env") == null? "url" : System.getProperty("env");
+//		url = propOperations.getValue(env + ".url");
+//		ControlActions.start(url);
+		ControlActions.start("https://parabank.parasoft.com/parabank/register.htm");
 		LoginPage logP = new LoginPage();
 		logP.login("Shanu@14");
 		

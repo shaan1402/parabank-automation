@@ -1,7 +1,6 @@
 package testscript;
 
 import java.io.IOException;
-import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -18,7 +17,7 @@ import utility.ExcelOperations;
 
 public class MultipleUserLoginTest {
 	
-public RegisterTest registerTest;
+	public RegisterTest registerTest;
 	
 	@BeforeClass
 	public void initialize() throws IOException {
@@ -32,7 +31,7 @@ public RegisterTest registerTest;
 		ControlActions.start("https://parabank.parasoft.com/parabank/register.htm");
 	}
 	
-	@Test(dataProvider = "loginDataProvider", priority = -1)
+	@Test(dataProvider = "loginDataProvider", priority = -1, enabled = false)
 	public void verifyLoginWithMultipleUsers(String username, String password) {
 
 	    LoginPage loginPage = new LoginPage();

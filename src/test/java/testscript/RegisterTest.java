@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -20,6 +22,10 @@ public class RegisterTest {
 	
 	@BeforeMethod
 	public void setup() {
+//		PropOperations propOperations = new PropOperations(ConstantPath.CONFIGFILEPATH);
+//		String env = System.getProperty("env") == null? "qa" : System.getProperty("env");
+//		String url = propOperations.getValue(env + ".url");
+//		ControlActions.start(url);
 		ControlActions.start("https://parabank.parasoft.com/parabank/register.htm");
 	}
 	
@@ -34,12 +40,9 @@ public class RegisterTest {
 //	}
 	
 	
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1)
 	public void verifyRegistration() {
-		
-		
-		
-		
+				
 		System.out.println(
 				"VERIFY : that first name, last name, address, city, state, zipcode, phone number, ssn, username, password and confirm password field is displayed and enabled");
 //		WebElement firstName = driver.findElement(By.xpath("//input[@id='customer.firstName']"));
@@ -157,7 +160,7 @@ public class RegisterTest {
 	public static List<String[]> credentials = new ArrayList<>();
 	
 	
-	@Test(priority = -1, enabled = false)
+	@Test(priority = -1,enabled = false)
 	public void verifyRegistrationForMultipleUser() {
 		
 		for(int i = 1; i<=5; i++) {
@@ -375,15 +378,17 @@ public class RegisterTest {
 
 		}
 	}
-}
 
-//	@AfterMethod
-//	public void tearDown(ITestResult result) {
-//		if(result.getStatus() == ITestResult.FAILURE) {
-//			System.out.println(result.getMethod());
-//			takeScreenShot(result.getName());
-//		}
-//	}
+
+	@AfterMethod
+	public void tearDown(ITestResult result) {
+		if(result.getStatus() == ITestResult.FAILURE) {
+			System.out.println(result.getMethod());
+			ControlActions.takeScreenShot(result.getName());
+		}
+		ControlActions.close();
+	}
+}
 //	
 //	public void takeScreenShot(String fileName) {
 //		TakesScreenshot ts = (TakesScreenshot)driver;

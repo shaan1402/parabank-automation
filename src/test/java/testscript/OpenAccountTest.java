@@ -1,12 +1,9 @@
 package testscript;
 
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import base.ControlActions;
 import pages.HomePage;
-import pages.LoginPage;
 import pages.OpenAccountPage;
 
 public class OpenAccountTest extends TestBase{

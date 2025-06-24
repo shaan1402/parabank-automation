@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import base.ControlActions;
+import io.qameta.allure.Step;
 
 public class OpenAccountPage extends ControlActions {
 
@@ -48,6 +49,7 @@ public class OpenAccountPage extends ControlActions {
 		PageFactory.initElements(driver, this);
 	}
 
+	@Step("Is Open New Acc DIsplayed")
 	public boolean isOpenNewAccountFieldDisplayed() {
 //		WebElement openNewAccountField = driver.findElement(By.xpath(openNewAccountLocator));
 //		waitForVisibilityOfElement(openNewAccountLocator);
@@ -55,6 +57,7 @@ public class OpenAccountPage extends ControlActions {
 		return isElementDisplayed(openNewAccountLocator, true);
 	}
 
+	@Step("Is Acc Type DIsplayed")
 	public boolean isAccountTypeFieldDisplayed() {
 //		WebElement accountTypeField = driver.findElement(By.xpath(accountTypeLocator));
 //		waitForVisibilityOfElement(accountTypeLocator);
@@ -63,6 +66,7 @@ public class OpenAccountPage extends ControlActions {
 
 	}
 
+	@Step("Is Acc Field DIsplayed")
 	public boolean isAccountsFieldDisplayed() {
 //		WebElement accountsField = driver.findElement(By.xpath(accountsLocator));
 //		waitForVisibilityOfElement(accountsLocator);
@@ -71,6 +75,7 @@ public class OpenAccountPage extends ControlActions {
 
 	}
 
+	@Step("Is Open New Acc Btn DIsplayed")
 	public boolean isOpenNewAccBtnDisplayed() {
 //		WebElement openAccButton = driver.findElement(By.xpath(openAccBtnLocator));
 //		waitForVisibilityOfElement(openNewAccBtnLocator);
@@ -79,6 +84,7 @@ public class OpenAccountPage extends ControlActions {
 
 	}
 
+	@Step("Select Acc Type")
 	public void selectAccType() {	
 //		WebElement accType = driver.findElement(By.xpath(accountTypeLocator));
 //		Select accTypeSelect = new Select(accountTypeLocator);
@@ -86,6 +92,7 @@ public class OpenAccountPage extends ControlActions {
 		selectElementFromDropdown(accountTypeLocator, "TEXT", "SAVINGS", true, true);
 	}
 
+	@Step("Select Acccounts")
 	public void selectAccounts() {
 //		WebElement accounts = getElement("XPATH", selectAccountsLocator, true, true);
 
@@ -101,6 +108,7 @@ public class OpenAccountPage extends ControlActions {
 //		mainAccNumber = fromAccountSelect.getFirstSelectedOption().getText();
 	}
 	
+	@Step("CLick on Open New Acc Btn")
 	public void clickOnOpenNewAccBtn() {
 		
 //		WebElement openNewAccButton = getElement("XPATH", openNewAccLocator, true, true);
@@ -126,6 +134,7 @@ public class OpenAccountPage extends ControlActions {
 		clickOnElement(openNewAccBtnLocator, true);
 	}
 	
+	@Step("Get New Acc Number")
 	public void getNewAccNum() {
 //		WebElement newAccNum1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("newAccountId")));
 		

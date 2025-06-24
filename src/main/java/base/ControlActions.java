@@ -19,7 +19,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pages.AccountOverviewPage;
 import path.ConstantPath;
 
 public class ControlActions {
@@ -29,6 +28,13 @@ public class ControlActions {
 	protected static JavascriptExecutor je;
 
 	public static void start(String url) {
+		String browser = System.getProperty("browserType");
+		String env = System.getProperty("env");
+		
+		System.out.println("=================================");
+		System.out.println("Browser =" + browser);
+		System.out.println("Environment =" + env);
+		
 		System.out.println("Launch Browser");
 		driver = new ChromeDriver();
 		System.out.println("Load URL");

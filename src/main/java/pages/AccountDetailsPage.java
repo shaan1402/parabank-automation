@@ -110,7 +110,7 @@ public class AccountDetailsPage extends ControlActions{
 //		Select monthSelect = new Select(monthtField);
 //		monthSelect.selectByValue("March");
 		
-		selectElementFromDropdown(monthSelectLocator, "VALUE", "May", true, true);
+		selectElementFromDropdown(monthSelectLocator, "VALUE", "June", true, true);
 	}
 	
 	public void selectTransactionType() {

@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.FundTransferTest">
+      <class name="testscript.MultipleUserLoginTest">
         <methods>
-          <include name="verifyFundTransfer"/>
-          <include name="startSetup"/>
-          <include name="tearDown"/>
+          <include name="initialize"/>
+          <include name="terminateAll"/>
+          <include name="startUp"/>
+          <include name="terminateBrowser"/>
+          <include name="verifyLoginWithMultipleUsers"/>
         </methods>
-      </class> <!-- testscript.FundTransferTest -->
+      </class> <!-- testscript.MultipleUserLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

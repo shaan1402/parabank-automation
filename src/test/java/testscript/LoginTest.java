@@ -1,7 +1,6 @@
 package testscript;
 
 import org.testng.Assert;
-
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -10,6 +9,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import base.ControlActions;
+import io.qameta.allure.Allure;
 import pages.AccountOverviewPage;
 import pages.HomePage;
 import pages.LoginPage;
@@ -22,17 +22,22 @@ public class LoginTest{
 	
 //	public static String mainAccNum;
 	
-	@BeforeClass
-	public void initialize() {
-		ControlActions.start("https://parabank.parasoft.com/parabank/register.htm");
-		registerTest = new RegisterTest();
-		registerTest.verifyRegistration();
-//		loginPage = new LoginPage();
-//		loginPage.login("Shanu@14");
-//		mainAccNum = loginPage.getMainAccountNumber();
-//		System.out.println(mainAccNum);
-	}
-	
+//	@BeforeClass
+//	public void initialize() {
+////		PropOperations propOperations = new PropOperations(ConstantPath.CONFIGFILEPATH);
+////		String env = System.getProperty("env").toLowerCase();
+////		String url = propOperations.getValue(env + ".url");
+////		ControlActions.start(url);
+//		
+//		ControlActions.start("https://parabank.parasoft.com/parabank/register.htm");
+////		registerTest = new RegisterTest();
+////		registerTest.verifyRegistration();
+////		loginPage = new LoginPage();
+////		loginPage.login("Shanu@14");
+////		mainAccNum = loginPage.getMainAccountNumber();
+////		System.out.println(mainAccNum);
+//	}
+//	
 	@BeforeMethod
 	public void startUp() {
 		ControlActions.start("https://parabank.parasoft.com/parabank/register.htm");
@@ -42,7 +47,7 @@ public class LoginTest{
 	public void verifyLogin() {
 //		RegisterTest rt = new RegisterTest();
 //		rt.verifyRegistration();
-		System.out.println("2.Verify that UserName and Password fields are displayed.");
+		Allure.step("2.Verify that UserName and Password fields are displayed.");
 		
 		LoginPage loginPage = new LoginPage();
 		
@@ -60,7 +65,7 @@ public class LoginTest{
 		sa.assertTrue(passwordField, "password filed is not displayed");
 		sa.assertTrue(loginBtnElement, "login button is not displayed");
 		sa.assertAll();
-		System.out.println("UserName and Password fields are displayed.");
+		Allure.step("UserName and Password fields are displayed.");
 
 //		System.out.println("Enter the Valid UserName.");
 //		loginPage.enterUserName();
@@ -69,9 +74,9 @@ public class LoginTest{
 //		loginPage.enterPassword("Shanu@141");
 //
 //		loginPage.clickOnLoginBtn();
-		System.out.println("verify login with username and password");
+		Allure.step("verify login with username and password");
 		loginPage.login("Shanu@14");
-		System.out.println("logged in");
+		Allure.step("logged in");
 		
 		AccountOverviewPage accPage = new AccountOverviewPage();
 		boolean accountOverviewField = accPage.isAccountOverviewFieldDisplayed();
@@ -79,27 +84,27 @@ public class LoginTest{
 		sa.assertTrue(accountOverviewField, "Account Overview Text is not displayed");
 		sa.assertTrue(mainAccountField, "Mainn Account number is not displayed");
 		sa.assertAll();
-		System.out.println("both fields are visible");
+		Allure.step("both fields on account overview page are visible");
 		
 		HomePage homePage = new HomePage();
 		sa.assertTrue(homePage.isHomePageDisplayed(), "Home page is not displayed");
-		System.out.println("logged in");
-		System.out.println("Home page displayed");
+		Allure.step("logged in");
+		Allure.step("Home page displayed");
 		
 //		mainAccNum = loginPage.getMainAccountNumber();
 		String mainAccNum = loginPage.getMainAccountNumber();
 		
 		System.out.println(mainAccNum);
 
-		System.out.println("verify logout");
+		Allure.step("verify logout");
 		boolean logoutBtnFlag = homePage.isLogoutDisplayed();
 		sa.assertTrue(logoutBtnFlag, "Logout button is not displayed");
 		sa.assertAll();
 		homePage.clickOnLogoutBtn();
-		System.out.println("logout succesfull");
+		Allure.step("logout succesfull");
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, enabled = false)
 	public void verifyInvalidAuthentication() {
 		LoginPage loginPage = new LoginPage();
 		

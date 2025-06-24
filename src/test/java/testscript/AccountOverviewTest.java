@@ -1,13 +1,10 @@
 package testscript;
 
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import base.ControlActions;
 import pages.AccountOverviewPage;
 import pages.HomePage;
-import pages.LoginPage;
 
 public class AccountOverviewTest extends TestBase{
 	
