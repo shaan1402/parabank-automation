@@ -115,7 +115,7 @@ public class RegisterTest {
 		registerPage.enterCity("indore");
 		
 //		state.sendKeys("Madhya Pradesh");
-		registerPage.enterState("Madhya Pradesh");
+		registerPage.enterState("Madhya Pradesh (India)");
 		
 //		zipCode.sendKeys("452003");
 		registerPage.enterZipCode("452003");
