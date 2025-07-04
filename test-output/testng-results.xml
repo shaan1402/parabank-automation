@@ -1,67 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="10" passed="7" failed="0" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-04T17:54:53 IST" name="Suite" finished-at="2025-07-04T17:55:51 IST" duration-ms="58616">
+  <suite started-at="2025-07-05T02:19:07 IST" name="Suite" finished-at="2025-07-05T02:19:24 IST" duration-ms="16501">
     <groups>
     </groups>
-    <test started-at="2025-07-04T17:54:53 IST" name="Test" finished-at="2025-07-04T17:55:51 IST" duration-ms="58616">
-      <class name="testscript.FundTransferTest">
-        <test-method is-config="true" signature="startSetup()[pri:0, instance:testscript.FundTransferTest@58ce9668]" started-at="2025-07-04T17:55:21 IST" name="startSetup" finished-at="2025-07-04T17:55:26 IST" duration-ms="4661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSetup -->
-        <test-method signature="verifyFundTransfer()[pri:0, instance:testscript.FundTransferTest@58ce9668]" started-at="2025-07-04T17:55:26 IST" name="verifyFundTransfer" finished-at="2025-07-04T17:55:27 IST" duration-ms="1437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFundTransfer -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testscript.FundTransferTest@58ce9668]" started-at="2025-07-04T17:55:27 IST" name="tearDown" finished-at="2025-07-04T17:55:27 IST" duration-ms="151" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyFundTransfer status=SUCCESS method=FundTransferTest.verifyFundTransfer()[pri:0, instance:testscript.FundTransferTest@58ce9668] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testscript.FundTransferTest -->
-      <class name="testscript.OpenAccountTest">
-        <test-method is-config="true" signature="startSetup()[pri:0, instance:testscript.OpenAccountTest@338c99c8]" started-at="2025-07-04T17:55:09 IST" name="startSetup" finished-at="2025-07-04T17:55:12 IST" duration-ms="3025" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSetup -->
-        <test-method signature="verifyOpenAccount()[pri:0, instance:testscript.OpenAccountTest@338c99c8]" started-at="2025-07-04T17:55:12 IST" name="verifyOpenAccount" finished-at="2025-07-04T17:55:15 IST" duration-ms="2796" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOpenAccount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testscript.OpenAccountTest@338c99c8]" started-at="2025-07-04T17:55:15 IST" name="tearDown" finished-at="2025-07-04T17:55:15 IST" duration-ms="134" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyOpenAccount status=SUCCESS method=OpenAccountTest.verifyOpenAccount()[pri:0, instance:testscript.OpenAccountTest@338c99c8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testscript.OpenAccountTest -->
+    <test started-at="2025-07-05T02:19:07 IST" name="Test" finished-at="2025-07-05T02:19:24 IST" duration-ms="16501">
       <class name="testscript.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.RegisterTest@3f57bcad]" started-at="2025-07-04T17:54:53 IST" name="setup" finished-at="2025-07-04T17:54:58 IST" duration-ms="5368" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.RegisterTest@44d52de2]" started-at="2025-07-05T02:19:08 IST" name="setup" finished-at="2025-07-05T02:19:13 IST" duration-ms="5049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRegistration()[pri:1, instance:testscript.RegisterTest@3f57bcad]" started-at="2025-07-04T17:54:58 IST" name="verifyRegistration" finished-at="2025-07-04T17:55:01 IST" duration-ms="2829" status="PASS">
+        <test-method signature="verifyRegistration()[pri:1, instance:testscript.RegisterTest@44d52de2]" started-at="2025-07-05T02:19:13 IST" name="verifyRegistration" finished-at="2025-07-05T02:19:16 IST" duration-ms="2871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testscript.RegisterTest@3f57bcad]" started-at="2025-07-04T17:55:01 IST" name="tearDown" finished-at="2025-07-04T17:55:01 IST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testscript.RegisterTest@44d52de2]" started-at="2025-07-05T02:19:16 IST" name="tearDown" finished-at="2025-07-05T02:19:16 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyRegistration status=SUCCESS method=RegisterTest.verifyRegistration()[pri:1, instance:testscript.RegisterTest@3f57bcad] output={null}]]]>
+                <![CDATA[[TestResult name=verifyRegistration status=SUCCESS method=RegisterTest.verifyRegistration()[pri:1, instance:testscript.RegisterTest@44d52de2] output={null}]]]>
               </value>
             </param>
           </params>
@@ -69,76 +27,24 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testscript.RegisterTest -->
-      <class name="testscript.ApplyLoanTest">
-        <test-method is-config="true" signature="startSetup()[pri:0, instance:testscript.ApplyLoanTest@56673b2c]" started-at="2025-07-04T17:55:43 IST" name="startSetup" finished-at="2025-07-04T17:55:49 IST" duration-ms="6402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSetup -->
-        <test-method signature="verifyLoanRequest()[pri:0, instance:testscript.ApplyLoanTest@56673b2c]" started-at="2025-07-04T17:55:49 IST" name="verifyLoanRequest" finished-at="2025-07-04T17:55:51 IST" duration-ms="2404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoanRequest -->
-      </class> <!-- testscript.ApplyLoanTest -->
-      <class name="testscript.BillPaymentTest">
-        <test-method is-config="true" signature="startSetup()[pri:0, instance:testscript.BillPaymentTest@172b013]" started-at="2025-07-04T17:55:27 IST" name="startSetup" finished-at="2025-07-04T17:55:34 IST" duration-ms="6742" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSetup -->
-        <test-method signature="verifyPayBill()[pri:0, instance:testscript.BillPaymentTest@172b013]" started-at="2025-07-04T17:55:34 IST" name="verifyPayBill" finished-at="2025-07-04T17:55:42 IST" duration-ms="8384" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPayBill -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testscript.BillPaymentTest@172b013]" started-at="2025-07-04T17:55:42 IST" name="tearDown" finished-at="2025-07-04T17:55:43 IST" duration-ms="226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPayBill status=SUCCESS method=BillPaymentTest.verifyPayBill()[pri:0, instance:testscript.BillPaymentTest@172b013] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testscript.BillPaymentTest -->
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:testscript.LoginTest@59a008ba]" started-at="2025-07-04T17:55:01 IST" name="startUp" finished-at="2025-07-04T17:55:05 IST" duration-ms="3430" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:testscript.LoginTest@1fb669c3]" started-at="2025-07-05T02:19:16 IST" name="startUp" finished-at="2025-07-05T02:19:19 IST" duration-ms="3941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="verifyLogin()[pri:1, instance:testscript.LoginTest@59a008ba]" started-at="2025-07-04T17:55:05 IST" name="verifyLogin" finished-at="2025-07-04T17:55:09 IST" duration-ms="3977" status="PASS">
+        <test-method signature="verifyLogin()[pri:1, instance:testscript.LoginTest@1fb669c3]" started-at="2025-07-05T02:19:19 IST" name="verifyLogin" finished-at="2025-07-05T02:19:24 IST" duration-ms="4213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:testscript.LoginTest@59a008ba]" started-at="2025-07-04T17:55:09 IST" name="terminateBrowser" finished-at="2025-07-04T17:55:09 IST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:testscript.LoginTest@1fb669c3]" started-at="2025-07-05T02:19:24 IST" name="terminateBrowser" finished-at="2025-07-05T02:19:24 IST" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-        <test-method is-config="true" signature="terminateAll()[pri:0, instance:testscript.LoginTest@59a008ba]" started-at="2025-07-04T17:55:09 IST" name="terminateAll" finished-at="2025-07-04T17:55:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="terminateAll()[pri:0, instance:testscript.LoginTest@1fb669c3]" started-at="2025-07-05T02:19:24 IST" name="terminateAll" finished-at="2025-07-05T02:19:24 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateAll -->
       </class> <!-- testscript.LoginTest -->
-      <class name="testscript.AccountOverviewTest">
-        <test-method is-config="true" signature="startSetup()[pri:0, instance:testscript.AccountOverviewTest@21ba0741]" started-at="2025-07-04T17:55:15 IST" name="startSetup" finished-at="2025-07-04T17:55:19 IST" duration-ms="3777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSetup -->
-        <test-method signature="verifyAccountOverview()[pri:0, instance:testscript.AccountOverviewTest@21ba0741]" started-at="2025-07-04T17:55:19 IST" name="verifyAccountOverview" finished-at="2025-07-04T17:55:21 IST" duration-ms="2075" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAccountOverview -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testscript.AccountOverviewTest@21ba0741]" started-at="2025-07-04T17:55:21 IST" name="tearDown" finished-at="2025-07-04T17:55:21 IST" duration-ms="183" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAccountOverview status=SUCCESS method=AccountOverviewTest.verifyAccountOverview()[pri:0, instance:testscript.AccountOverviewTest@21ba0741] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testscript.AccountOverviewTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

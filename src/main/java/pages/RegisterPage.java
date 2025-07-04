@@ -62,10 +62,10 @@ public class RegisterPage extends ControlActions {
 	
 	public static int getRandomNum() {
 		Random random = new Random();
-		return random.nextInt(10000);
+		return random.nextInt(100000);
 	}
 
-	public static String newUser = "shaan" + getRandomNum();
+	public static String newUser = "shaanu" + getRandomNum();
 	
 	public RegisterPage() {
 		PageFactory.initElements(driver, this);
@@ -220,6 +220,7 @@ public class RegisterPage extends ControlActions {
 	
 	@Step("Enter UserName : {0}")
 	public void enterUserName(String username) {
+		
 		setText(userNameLocator, username, true);
 	}
 	

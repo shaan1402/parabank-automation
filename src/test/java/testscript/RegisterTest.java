@@ -103,6 +103,7 @@ public class RegisterTest {
 		System.out.println("Enter valid details to register");
 		
 //		firstName.sendKeys("Shanu");
+		
 		registerPage.enterFirstName("Shanu");
 		
 //		lastName.sendKeys("Mahajan");
@@ -115,7 +116,7 @@ public class RegisterTest {
 		registerPage.enterCity("indore");
 		
 //		state.sendKeys("Madhya Pradesh");
-		registerPage.enterState("Madhya Pradesh (India)");
+		registerPage.enterState("Madhya Pradesh");
 		
 //		zipCode.sendKeys("452003");
 		registerPage.enterZipCode("452003");
@@ -386,7 +387,7 @@ public class RegisterTest {
 			System.out.println(result.getMethod());
 			ControlActions.takeScreenShot(result.getName());
 		}
-		ControlActions.close();
+//		ControlActions.close();
 	}
 }
 //	

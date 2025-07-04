@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1","verifyInvalidAuthentication","Suite","Sat Jul 05 01:47:07 IST 2025","unknown","Sat Jul 05 01:47:07 IST 2025","testscript.LoginTest","Test","testscript.LoginTest","verifyInvalidAuthentication"
+"","0","verifyOpenAccount","Suite","Sat Jul 05 01:47:51 IST 2025","skipped","Sat Jul 05 01:47:51 IST 2025","testscript.OpenAccountTest","Test","testscript.OpenAccountTest","verifyOpenAccount"
+"","1880","verifyRegistration","Suite","Sat Jul 05 01:47:10 IST 2025","broken","Sat Jul 05 01:47:12 IST 2025","testscript.RegisterTest","Test","testscript.RegisterTest","verifyRegistration"
+"","0","verifyRegistrationForMultipleUser","Suite","Sat Jul 05 01:47:07 IST 2025","unknown","Sat Jul 05 01:47:07 IST 2025","testscript.RegisterTest","Test","testscript.RegisterTest","verifyRegistrationForMultipleUser"
+"","0","verifyRegistrationForMultipleUser2","Suite","Sat Jul 05 01:47:07 IST 2025","unknown","Sat Jul 05 01:47:07 IST 2025","testscript.RegisterTest","Test","testscript.RegisterTest","verifyRegistrationForMultipleUser2"
+"","31629","verifyLogin","Suite","Sat Jul 05 01:47:16 IST 2025","broken","Sat Jul 05 01:47:48 IST 2025","testscript.LoginTest","Test","testscript.LoginTest","verifyLogin"
+"","1","startSetup","Suite","Sat Jul 05 01:47:51 IST 2025","broken","Sat Jul 05 01:47:51 IST 2025","testscript.OpenAccountTest","Test","testscript.OpenAccountTest","startSetup"
