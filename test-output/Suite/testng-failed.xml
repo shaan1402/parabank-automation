@@ -3,19 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscript.BillPaymentTest">
+      <class name="testscript.LoginTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="startSetup"/>
-          <include name="verifyPayBill"/>
+          <include name="terminateBrowser"/>
+          <include name="startUp"/>
+          <include name="terminateAll"/>
+          <include name="verifyLogin"/>
         </methods>
-      </class> <!-- testscript.BillPaymentTest -->
-      <class name="testscript.ApplyLoanTest">
-        <methods>
-          <include name="startSetup"/>
-          <include name="verifyLoanRequest"/>
-        </methods>
-      </class> <!-- testscript.ApplyLoanTest -->
+      </class> <!-- testscript.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
